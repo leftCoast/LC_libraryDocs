@@ -1,3 +1,4 @@
+**11/9/2025**
 This is rolling along. Larger project than imagined. Odd that. Projects are ALWAYS larger than I imagine. You think I"d learn.
 
 What phase are we in here? Still adding libraries to it. I mean, how many did I write? Seems like hundreds! But, since things are still being added, there's not a lot of proofreading going on. It's mostly just dumping in as much as I can, as quickly as possible. But, doing this is waking me up to the fact that, some of these libraries really need attention. And probably some rewriting.
