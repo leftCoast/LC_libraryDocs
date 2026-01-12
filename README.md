@@ -11,7 +11,7 @@ I've also had to refactor some of my repositories to group together similar stuf
 
 **1/11/2026**
 
-Well, the first pass is done. There is probably a lot of editing that could/should be done. Some bits are pretty thin. But, what's there, should accurate and up to dat with the curent code base. Most of the libraries that needed attention, got it. Some stuff ended up getting rewritten. There was a bunch of Wokwi simulator examples written and linked in. That should be a real help.
+Well, the first pass is done. There is probably a lot of editing that could/should be done. Some bits are pretty thin. But, what's there, should accurate and up to date with the curent code base. Most of the libraries that needed attention, got it. Some stuff ended up getting rewritten. There was a bunch of Wokwi simulator examples written and linked in. That should be a real help.
 
 So go ahead and give it a look. If this stuff can help you with your projects, you are wlecome to give it a go.
 
