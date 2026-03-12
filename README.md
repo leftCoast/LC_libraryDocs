@@ -1,18 +1,12 @@
-**11/9/2025**
-
-
-This is rolling along. Larger project than imagined. Odd that. Projects are ALWAYS larger than I imagine. You think I"d learn.
-
-What phase are we in here? Still adding libraries to it. I mean, how many did I write? Seems like hundreds! But, since things are still being added, there's not a lot of proofreading going on. It's mostly just dumping in as much as I can, as quickly as possible. But, doing this is waking me up to the fact that, some of these libraries really need attention. And probably some rewriting.
-
-I've also had to refactor some of my repositories to group together similar stuff and separate out other less related things. For example, separating SD card stuff from the GUI code was a nightmare. They had become so intertwined. But I like this better. Because now, you can do basic drawing to displays, without dragging all the SD card code along with it. Unless you need it.
-
-**Current phase of this project :** Bulk adding sections about different libraries.
-
-**1/11/2026**
-
-Well, the first pass is done. There is probably a lot of editing that could/should be done. Some bits are pretty thin. But, what's there, should accurate and up to date with the curent code base. Most of the libraries that needed attention, got it. Some stuff ended up getting rewritten. There was a bunch of Wokwi simulator examples written and linked in. That should be a real help.
-
-So go ahead and give it a look. If this stuff can help you with your projects, you are wlecome to give it a go.
-
-**Current phase of this project :** It's all there, may not be totoaly pretty but it should be accutate.
+**Why these libraries? What are they all about?
+Let's start with a story..**
+The Arduino was developed to be easy to use for non programmers. At least that's what I've been told. And, as far as I can tell, they did a great job of doing just that. You run the software, plug in the hardware, and within minutes, most can be making it do stuff.
+Arduinos run c++, a very popular language for writing applications. You find it everywhere. Not some "Hide what's going on in bubbles" kinda' thing.
+The issue is, liner thinking/programming. Going line by line without a break. The first example you get, when learning to program an Arduino, is blink. And to hold the LED on or off long enough so people can see it, they introduce delay(). 
+This is like getting a job mowing the neighbors lawn once a week. You mow the lawn, do a bang up job of it. Then park the mower and stand next to it, waiting to mow the lawn again. 
+For a week. 
+There must be a way out of this. And there is. There's millis(). This introduces another learning curve that many find a bit tough. You need to read the start time, save it, read the current time, do unsigned math, (Whatever that is) check the results. Really it's not hard. But for people that don't have the vocabulary? It sure seems like it is. And besides the learning curve, it's not very scalable. After about four or five of them, things in you code will start getting hard to follow.
+timeObj (You will find in here.) pretty much puts millis() to bed. Internally it is just millis(). But, all the math, all the system calls, all the saved data.  It's all boxed up in one little self contained package. You can easily have as many as you like, timing all sorts of stuff.
+Now in loop() you can just set a timer and go on to other things. But the issue with linear thinking/programming is still with us. Instead of plodding along a track, looking for things to happen. Let the computer run about in the background and just tell us when things happen. Then we can decide how to deal them.
+This is what these Left coast libraries are all about. Having c++ objects that can take care of themselves. Don't watch the Serial port trying to put together a string command. Let it run by itself and tell you when it's assembled a complete string command for you. And here it is, do with it as you like. You want to blink an LED? Have a c++ class that you tell it what pin the LED's on and let it blink if for you without having to deal with it, or even think about it. Suddenly your software world is very scalable!
+Its like the difference between being one giant very busy Popeye Sailor running around controlling everything. And having a lot of little smart sailors taking care of their areas and interacting to manage the entire process. Much more scalable, much more maintainable. And, once you get used to thinking that way MUCH easier to code.
