@@ -1,12 +1,20 @@
 **Why these libraries? What are they all about?
 Let's start with a story..**
+
 The Arduino was developed to be easy to use for non programmers. At least that's what I've been told. And, as far as I can tell, they did a great job of doing just that. You run the software, plug in the hardware, and within minutes, most can be making it do stuff.
+
 Arduinos run c++, a very popular language for writing applications. You find it everywhere. Not some "Hide what's going on in bubbles" kinda' thing.
-The issue is, liner thinking/programming. Going line by line without a break. The first example you get, when learning to program an Arduino, is blink. And to hold the LED on or off long enough so people can see it, they introduce delay(). 
+The issue is, liner thinking/programming. Going line by line without a break. The first example you get, when learning to program an Arduino, is blink. And to hold the LED on or off long enough so people can see it, they introduce delay().
+
 This is like getting a job mowing the neighbors lawn once a week. You mow the lawn, do a bang up job of it. Then park the mower and stand next to it, waiting to mow the lawn again. 
-For a week. 
+For a week.
+
 There must be a way out of this. And there is. There's millis(). This introduces another learning curve that many find a bit tough. You need to read the start time, save it, read the current time, do unsigned math, (Whatever that is) check the results. Really it's not hard. But for people that don't have the vocabulary? It sure seems like it is. And besides the learning curve, it's not very scalable. After about four or five of them, things in you code will start getting hard to follow.
+
 timeObj (You will find in here.) pretty much puts millis() to bed. Internally it is just millis(). But, all the math, all the system calls, all the saved data.  It's all boxed up in one little self contained package. You can easily have as many as you like, timing all sorts of stuff.
+
 Now in loop() you can just set a timer and go on to other things. But the issue with linear thinking/programming is still with us. Instead of plodding along a track, looking for things to happen. Let the computer run about in the background and just tell us when things happen. Then we can decide how to deal them.
+
 This is what these Left coast libraries are all about. Having c++ objects that can take care of themselves. Don't watch the Serial port trying to put together a string command. Let it run by itself and tell you when it's assembled a complete string command for you. And here it is, do with it as you like. You want to blink an LED? Have a c++ class that you tell it what pin the LED's on and let it blink if for you without having to deal with it, or even think about it. Suddenly your software world is very scalable!
+
 Its like the difference between being one giant very busy Popeye Sailor running around controlling everything. And having a lot of little smart sailors taking care of their areas and interacting to manage the entire process. Much more scalable, much more maintainable. And, once you get used to thinking that way MUCH easier to code.
