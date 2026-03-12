@@ -3,7 +3,8 @@ Let's start with a story..**
 
 The Arduino was developed to be easy to use for non programmers. At least that's what I've been told. And, as far as I can tell, they did a great job of doing just that. You run the software, plug in the hardware, and within minutes, most can be making it do stuff.
 
-Arduinos run c++, a very popular language for writing applications. You find it everywhere. Not some "Hide what's going on in bubbles" kinda' thing.
+Arduinos run c++, a very popular language for writing applications. You find it everywhere. Not some "Hide what's going on in bubbles" kinda' thing. Everything seems ticky-boo. But there's an issue..
+
 The issue is, liner thinking/programming. Going line by line without a break. The first example you get, when learning to program an Arduino, is blink. And to hold the LED on or off long enough so people can see it, they introduce delay().
 
 This is like getting a job mowing the neighbors lawn once a week. You mow the lawn, do a bang up job of it. Then park the mower and stand next to it, waiting to mow the lawn again. 
