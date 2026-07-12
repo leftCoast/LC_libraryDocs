@@ -19,3 +19,5 @@ Now in loop() you can just set a timer and go on to other things. But the issue 
 This is what these Left coast libraries are all about. Having c++ objects that can take care of themselves. Don't watch the Serial port trying to put together a string command. Let it run by itself and tell you when it's assembled a complete string command for you. And here it is, do with it as you like. You want to blink an LED? Have a c++ class that you tell it what pin the LED's on and let it blink if for you without having to deal with it, or even think about it. Suddenly your software world is very scalable!
 
 Its like the difference between being one giant very busy Popeye Sailor running around controlling everything. And having a lot of little smart sailors taking care of their areas and interacting to manage the entire process. Much more scalable, much more maintainable. And, once you get used to thinking that way MUCH easier to code.
+
+**NOTE : Something has changed and now github can not read the .pdf version. It used to work, I don't know what's changed. I downloaded a copy of it, seems fine on my Mac.**
